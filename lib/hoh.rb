@@ -33,32 +33,26 @@
 
 
 def naming_system
-  portion_1 = {
-   label: "Kingdom",
+ portion_1 = {
+  label: "Kingdom",
+   sub_category:{
+  label: "Phylum",
    sub_category: {
-     label: "Phylum",
-     sub_category: {
-       label: "Class"
-     }
-   }
- }
- 
- portion_2 = {
-   label: "Order"
- }
- 
- portion_3 = {
-   label: "Genus",
+  label:  "Order",
    sub_category: {
-     label: "Family",
-   }
- }
- 
- portion_4 = {
+  label: "Class",
+   sub_category: {
+  label: "Genus",
+   sub_category: {
+  label: "Family",
+   sub_category: {
   label: "Species",
-  sub_category: 
+   sub_category:
     sub_category: nil
- }
+   {
+   
+   }
+ } }}}}}}
  end
 naming_system
 # So, if we have the "Kingdom" node we should be able to "tunnel" into the
